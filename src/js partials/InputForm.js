@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React /*{ useState }*/ from "react";
 // import axios from "axios";
 
 import "../css partials/InputForm.css";
 
 export default function InputForm() {
-  const [city, setCity] = useState("");
+  // const [city, setCity] = useState("");
   // const [weather, setWeather] = useState({});
   // const [loaded, setLoaded] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    const API_KEY = "8f5def28851f5cf815cb404385490799";
-    const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+    // const API_KEY = "8f5def28851f5cf815cb404385490799";
+    // const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     // axios.get(API_URL).then(showWeather);
   }
 
   function updateInput(e) {
-    setCity(e.target.value);
+    // setCity(e.target.value);
   }
 
   // function showWeather({ data }) {
