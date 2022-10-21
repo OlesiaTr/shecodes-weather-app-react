@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css partials/App.css";
 
 export default function App(newCity) {
