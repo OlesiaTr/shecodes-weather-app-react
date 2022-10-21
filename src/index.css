@@ -1,0 +1,110 @@
+body {
+  color: #dcd7c9;
+  background-color: #dcd7c9;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  padding-top: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+.weekday {
+  font-family: "Patrick Hand", cursive;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: #dcd7c9;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  border-color: transparent;
+  background: transparent;
+}
+
+a:hover,
+button:hover,
+a:focus,
+button:focus {
+  color: #f1d00a;
+}
+
+input {
+  color: #dcd7c9;
+  border-color: #dcd7c9;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input:hover {
+  color: #f1d00a;
+  border-color: #f1d00a;
+}
+
+input.custom {
+  font-weight: 600;
+  font-size: large;
+}
+
+.container {
+  width: 415px;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 40px;
+  border: 1px solid #31223c;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/OlesiaTr/SheCodes-weather-app/main/imgs/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -1,0 +1,41 @@
+.WeatherForecast {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.WeatherForecast .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.WeatherForecast .col {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast__date {
+  margin-bottom: 10px;
+}
+
+.forecast__icon,
+.forecast__temp {
+  border: 2px solid #f1d00a;
+  border-radius: 15px;
+  border-left: none;
+  border-right: none;
+}
+
+.forecast__icon {
+  width: 40px;
+  height: 40px;
+  border-bottom: none;
+}
+
+.forecast__temp {
+  border-top: none;
+}
