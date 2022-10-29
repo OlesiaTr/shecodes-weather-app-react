@@ -3,7 +3,7 @@ import "../css partials/CityDateInfo.css";
 import FormattedDate from "./FormattedDate";
 
 export default function CityDateInfo({ data }) {
-  const hideItem = document.querySelector(".CityDateInfo");
+  // const hideItem = document.querySelector(".CityDateInfo");
 
   const now = new Date();
 
@@ -24,7 +24,7 @@ export default function CityDateInfo({ data }) {
     );
   } else {
     const newDate = new Date(data.time * 1000);
-    hideItem.classList.add("hidden");
+    // hideItem.classList.toggle("hidden");
     return (
       <div className="CityDateInfo">
         <div className="city-info">

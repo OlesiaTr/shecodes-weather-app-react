@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import SvgLinks from "./js partials/SvgLinks";
 import App from "./js partials/App";
 import InputForm from "./js partials/InputForm";
-import CityDateInfo from "./js partials/CityDateInfo";
+// import CityDateInfo from "./js partials/CityDateInfo";
 import WeatherForecast from "./js partials/WeatherForecast";
 import Footer from "./js partials/Footer";
 
@@ -18,7 +18,7 @@ root.render(
       <SvgLinks />
       <App defaultTemp={29} />
       <InputForm />
-      <CityDateInfo />
+      {/* <CityDateInfo /> */}
       <WeatherForecast />
       <Footer />
     </div>
