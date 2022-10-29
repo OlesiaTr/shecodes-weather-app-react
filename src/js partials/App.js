@@ -1,4 +1,5 @@
 import React from "react";
+import MetricChange from "./MetricChange";
 import "../css partials/App.css";
 
 export default function App({ defaultTemp, data }) {
@@ -30,24 +31,7 @@ export default function App({ defaultTemp, data }) {
   } else {
     hideItem.classList.add("hidden");
     return (
-      <section className="main-window">
-        <div className="main-text">
-          <h1 id="temp">{Math.round(data.temp)}°C</h1>
-          <h2 id="weather">{data.desc}</h2>
-        </div>
-        <div className="degrees-choice">
-          <span>
-            {/* TO TURN BACK INTO LINKS */}
-            <button href="#" id="celsius">
-              °C
-            </button>{" "}
-            |{" "}
-            <button href="#" id="fahrenheit">
-              °F
-            </button>
-          </span>
-        </div>
-      </section>
+      <MetricChange temperature={Math.round(data.temp)} desc={data.desc} />
     );
   }
 }

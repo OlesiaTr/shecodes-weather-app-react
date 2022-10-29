@@ -18,7 +18,6 @@ root.render(
       <SvgLinks />
       <App defaultTemp={29} />
       <InputForm />
-      {/* <CityDateInfo /> */}
       <WeatherForecast />
       <Footer />
     </div>
