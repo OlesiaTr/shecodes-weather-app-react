@@ -1,16 +1,44 @@
 import "../css partials/CityDateInfo.css";
 
-export default function CityDateInfo() {
-  return (
-    <div className="CityDateInfo">
-      <div className="city-info">
-        <h3>
-          <span id="city"> Kharkiv</span> <span id="country">, Ukraine</span>
-        </h3>
+import FormattedDate from "./FormattedDate";
+
+export default function CityDateInfo({ data }) {
+  const hideItem = document.querySelector(".CityDateInfo");
+
+  const now = new Date();
+
+  if (data === undefined) {
+    return (
+      <div className="CityDateInfo">
+        <div className="city-info">
+          <h3>
+            <span id="city"> Kharkiv</span> <span id="country">, Ukraine</span>
+          </h3>
+        </div>
+        <div className="date-info">
+          <h4 id="date">
+            <FormattedDate date={now} />
+          </h4>
+        </div>
       </div>
-      <div className="date-info">
-        <h4 id="date">Sunday | June 26 | 19:47</h4>
+    );
+  } else {
+    const newDate = new Date(data.time * 1000);
+    hideItem.classList.add("hidden");
+    return (
+      <div className="CityDateInfo">
+        <div className="city-info">
+          <h3>
+            <span id="city"> {data.city}</span>{" "}
+            <span id="country">, {data.country}</span>
+          </h3>
+        </div>
+        <div className="date-info">
+          <h4 id="date">
+            <FormattedDate date={newDate} />
+          </h4>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

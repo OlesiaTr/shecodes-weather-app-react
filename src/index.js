@@ -16,7 +16,7 @@ root.render(
   <React.StrictMode>
     <div className="container">
       <SvgLinks />
-      <App />
+      <App defaultTemp={29} />
       <InputForm />
       <CityDateInfo />
       <WeatherForecast />
