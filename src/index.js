@@ -8,7 +8,7 @@ import SvgLinks from "./js partials/SvgLinks";
 import App from "./js partials/App";
 import InputForm from "./js partials/InputForm";
 // import CityDateInfo from "./js partials/CityDateInfo";
-import WeatherForecast from "./js partials/WeatherForecast";
+// import WeatherForecast from "./js partials/WeatherForecast";
 import Footer from "./js partials/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,7 +18,7 @@ root.render(
       <SvgLinks />
       <App defaultTemp={29} />
       <InputForm />
-      <WeatherForecast />
+      {/* <WeatherForecast /> */}
       <Footer />
     </div>
   </React.StrictMode>

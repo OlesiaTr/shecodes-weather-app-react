@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 export default function MetricChange({ temperature, desc }) {
   const [unit, setUnit] = useState("celsius");
-  console.log(temperature);
-  console.log(desc);
 
   function displayFahr(event) {
     event.preventDefault();
@@ -24,7 +22,6 @@ export default function MetricChange({ temperature, desc }) {
         </div>
         <div className="degrees-choice">
           <span>
-            {/* TO TURN BACK INTO LINKS */}
             <a href="/" id="celsius" onClick={displayCels}>
               °C
             </a>{" "}
@@ -45,7 +42,6 @@ export default function MetricChange({ temperature, desc }) {
         </div>
         <div className="degrees-choice">
           <span>
-            {/* TO TURN BACK INTO LINKS */}
             <a href="/" id="celsius" onClick={displayCels}>
               °C
             </a>{" "}

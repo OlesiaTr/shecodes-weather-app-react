@@ -3,6 +3,7 @@ import axios from "axios";
 
 import App from "./App";
 import CityDateInfo from "./CityDateInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "../css partials/InputForm.css";
 
@@ -57,6 +58,7 @@ export default function InputForm() {
       loaded: true,
       time: data.time,
       city: data.city,
+      coord: data.coordinates,
       country: data.country,
       temp: data.temperature.current,
       desc: data.condition.description,
@@ -72,6 +74,7 @@ export default function InputForm() {
         <App data={weather} />
         {form}
         <CityDateInfo data={weather} />
+        <WeatherForecast data={weather} />
       </div>
     );
   } else {

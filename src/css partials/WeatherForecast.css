@@ -3,6 +3,7 @@
   padding-right: 15px;
   font-size: 17px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .WeatherForecast .row {
@@ -16,6 +17,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 
 .forecast__date {
@@ -38,4 +41,8 @@
 
 .forecast__temp {
   border-top: none;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.7;
 }
