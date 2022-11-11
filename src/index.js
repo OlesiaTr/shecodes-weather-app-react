@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import SvgLinks from "./js partials/SvgLinks";
 import App from "./js partials/App";
 import InputForm from "./js partials/InputForm";
 // import CityDateInfo from "./js partials/CityDateInfo";
@@ -15,10 +14,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="container">
-      <SvgLinks />
       <App defaultTemp={29} />
       <InputForm />
-      {/* <WeatherForecast /> */}
       <Footer />
     </div>
   </React.StrictMode>

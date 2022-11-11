@@ -25,6 +25,18 @@ export default function InputForm() {
     setCity(e.target.value);
   }
 
+  function getCurrentPosition(e) {
+    e.preventDefault();
+    navigator.geolocation.getCurrentPosition(retrievePosition);
+  }
+
+  function retrievePosition(position) {
+    const lon = position.coords.longitude;
+    const lat = position.coords.latitude;
+    const API_URL = `current?lon=${lon}&lat=${lat}&key=${API_KEY}&units=metric`;
+    axios.get(API_URL).then(showWeather);
+  }
+
   const form = (
     <form id="search-form" onSubmit={handleSubmit} className="search-form">
       <input
@@ -45,12 +57,12 @@ export default function InputForm() {
         value="Current position"
         className="rounded-pill bg-transparent"
         id="current-position"
+        onClick={getCurrentPosition}
       />
     </form>
   );
 
   function showWeather({ data }) {
-    console.log(data);
     if (data.message === "City not found") {
       return alert("Please, type correct name of the city");
     }
